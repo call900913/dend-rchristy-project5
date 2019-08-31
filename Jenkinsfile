@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''docker image build -t call900913/basic-nginx:latest .
 
-'''
+docker push call900913/basic-nginx:latest'''
       }
     }
   }
