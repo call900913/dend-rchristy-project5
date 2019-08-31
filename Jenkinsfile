@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Push image') {
       steps {
-        withDockerRegistry([ credentialsId: "call900913", url: "" ]) {
+        withDockerRegistry([ credentialsId: "call900913", url: "docker.io" ]) {
           bat "docker push call900913/basic-nginx:latest"
         }
       }
