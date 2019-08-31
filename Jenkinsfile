@@ -11,5 +11,10 @@ pipeline {
         sh 'sudo docker image build -t call900913/basic-nginx:latest .'
       }
     }
+    stage('Push Image') {
+      steps {
+        sh 'sudo docker push call900913/basic-nginx:latest'
+      }
+    }
   }
 }
