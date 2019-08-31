@@ -15,8 +15,10 @@ pipeline {
       }
     }
     stage('Push image') {
-      withDockerRegistry([ credentialsId: "call900913", url: "" ]) {
-        bat "docker push call900913/basic-nginx:latest"
+      steps {
+        withDockerRegistry([ credentialsId: "call900913", url: "" ]) {
+          bat "docker push call900913/basic-nginx:latest"
+        }
       }
     }
   }
