@@ -2,7 +2,7 @@ pipeline {
   environment {
       registry = "call900913/basic-nginx"
       registryCredential = 'call900913'
-      dockerImage = ""call900913/basic-nginx""
+      dockerImage = "call900913/basic-nginx"
   }
   agent any
   stages {
