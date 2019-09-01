@@ -12,6 +12,7 @@ pipeline {
         sh '''sudo docker tag call900913/basic-nginx:latest call900913/basic-nginx:latest
 '''
         sh 'sudo docker push call900913/basic-nginx:latest'
+        sh 'sudo docker login'
       }
     }
   }
