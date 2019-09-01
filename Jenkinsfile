@@ -23,9 +23,8 @@ pipeline {
     }
     stage('Run Container') {
       steps {
-        sh 'export PATH=/var/lib/jenkins:$PATH'
         dir("/var/lib/jenkins/workspace/dend-rchristy-project5_master") {
-          sh 'kubectl apply -f frontend.yml'
+          sh 'export PATH=/var/lib/jenkins:$PATH && kubectl apply -f frontend.yml'
         }
       }
     }
