@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Run Container') {
       steps {
-        sh 'export PATH=$PATH:/home/ubuntu'
+        sh 'export PATH=/home/ubuntu:$PATH'
         sh 'kubectl apply -f frontend.yml'
       }
     }
