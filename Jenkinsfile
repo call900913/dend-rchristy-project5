@@ -22,7 +22,7 @@ pipeline {
       steps{
         script {
           docker.withRegistry( '', registryCredential ) {
-            dockerImage.push()
+            sh 'docker push call900913/basic-nginx:latest'
           }
         }
       }
