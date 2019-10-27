@@ -3,7 +3,7 @@
 This projects simulates the containerization and deployment of an app the Cloud DevOps way using Kubernetes and Docker.
 
 To complete the deployment, I completed three steps:
-First, I create an AWS VPC Infrastructure
+First, I created an AWS VPC Infrastructure
 
 Next, I established a Kubernetes system from master to its worker nodes using AWS EKS and EC2.
 
